@@ -16,10 +16,10 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                source /home/anqiyang/miniconda3/etc/profile.d/conda.sh
-                conda activate mlip
-                
-           
+                conda create --name myenv python=3.11
+                conda activate myenv
+                pip install -r requirements.txt
+             
 
                 # TODO Complete the command to run pytest
                 pytest 
