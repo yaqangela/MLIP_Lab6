@@ -16,6 +16,7 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
+
                 python3.12 -m venv venv
                 source venv/bin/activate
                 pip install -r requirements.txt
@@ -23,8 +24,8 @@ pipeline {
                 # TODO Complete the command to run pytest
                 pytest 
 
-                echo 'pytest not runned'
-                exit 1 #comment this line after implementing Jenkinsfile
+                #echo 'pytest not runned'
+                #exit 1 #comment this line after implementing Jenkinsfile
                 '''
 
             }
