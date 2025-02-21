@@ -16,7 +16,7 @@ pipeline {
                 echo 'Test Step: We run testing tool like pytest here'
 
                 # TODO fill out the path to conda here
-                source /home/anqiyang/miniconda3/condabin/conda.sh
+                source /home/anqiyang/miniconda3/etc/profile.d/conda.sh
                 conda activate mlip
                 pip install -r requirements.txt
 
